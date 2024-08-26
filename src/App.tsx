@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="h-screen ">
+    <div className="h-screen pb-[280px]">
       <Toaster
         position="top-center"
         reverseOrder={true}
