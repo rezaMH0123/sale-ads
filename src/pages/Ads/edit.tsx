@@ -41,9 +41,9 @@ export default function EditAds() {
           صبر کنید...
         </div>
       ) : (
-        <Container outherClassName="py-8">
+        <Container outherClassName="py-8 h-[700px]">
           <div className="col-span-full md:col-span-5 px-6">
-            <div className="shadow-card-3 h-full">
+            <div className="shadow-card-3 dark:bg-white rounded-lg h-full">
               <EditAdsForm
                 position={position!}
                 defaultValues={{

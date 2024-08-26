@@ -10,7 +10,7 @@ export default function Container({
 }: ContainerProps) {
   return (
     <div
-      className={`h-screen grid grid-cols-12 max-w-7xl mx-auto px-3  md:px-8 ${outherClassName} `}
+      className={`h-full grid grid-cols-12 max-w-7xl mx-auto px-3  md:px-8 ${outherClassName} `}
     >
       {children}
     </div>

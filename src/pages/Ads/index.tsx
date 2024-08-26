@@ -89,7 +89,7 @@ export default function AllAds() {
 
         {/* لودینگ */}
         {adsQuery.isLoading && (
-          <div className="flex justify-center items-center flex-1">
+          <div className="flex justify-center items-center flex-1 dark:text-white">
             درحال بارگذاری اگهی ها، لطفا صبور باشید...
           </div>
         )}

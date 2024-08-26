@@ -38,11 +38,13 @@ export const Pagination: FC<PaginationProps> = ({
       >
         <IconChevron
           className={`w-8 h-8 ${
-            hasPrevPage ? "stroke-cyan-700" : "stroke-gray-600 opacity-30"
+            hasPrevPage
+              ? "stroke-cyan-700 dark:stroke-teal-400"
+              : "stroke-gray-600 dark:stroke-gray-500 dark:opacity-90 opacity-30"
           }`}
         />
       </button>
-      <div className="flex items-center justify-center mx-1 space-x-2">
+      <div className="flex items-center justify-center mx-1 space-x-2 dark:text-white">
         {renderPageNumbers()}
       </div>
       <button
@@ -52,7 +54,9 @@ export const Pagination: FC<PaginationProps> = ({
       >
         <IconChevron
           className={`rotate-180 w-8 h-8 ${
-            hasNextPage ? "stroke-cyan-700" : "stroke-gray-600 opacity-30"
+            hasNextPage
+              ? "stroke-cyan-700 dark:stroke-teal-400"
+              : "stroke-gray-600 dark:stroke-gray-500 dark:opacity-90 opacity-30"
           }`}
         />
       </button>

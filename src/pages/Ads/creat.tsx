@@ -12,9 +12,9 @@ export default function CreateAds() {
   });
 
   return (
-    <Container outherClassName="py-8">
-      <div className="col-span-full md:col-span-5 md:px-6 ">
-        <div className="shadow-card-3 h-full">
+    <Container outherClassName="py-8 h-[700px]">
+      <div className="col-span-full md:col-span-5 md:px-6">
+        <div className="shadow-card-3 dark:bg-white rounded-lg h-full">
           <CreatAdsForm position={position!} />
         </div>
       </div>
