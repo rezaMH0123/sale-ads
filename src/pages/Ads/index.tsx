@@ -88,7 +88,7 @@ export default function AllAds() {
         </div>
 
         {/* لودینگ */}
-        {adsQuery.isLoading && (
+        {adsQuery.isFetching && (
           <div className="flex justify-center items-center flex-1 dark:text-white">
             درحال بارگذاری اگهی ها، لطفا صبور باشید...
           </div>
@@ -102,14 +102,14 @@ export default function AllAds() {
         )}
 
         {/* اگر داده‌ای موجود نیست */}
-        {!adsQuery.isLoading && adsQuery.data?.data.length === 0 && (
+        {!adsQuery.isFetching && adsQuery.data?.data.length === 0 && (
           <div className="flex justify-center items-center flex-1">
             <EmptyState message="هیچ آگهی‌ای برای نمایش وجود ندارد." />
           </div>
         )}
 
         {/* نمایش لیست آگهی‌ها */}
-        {!adsQuery.isLoading &&
+        {!adsQuery.isFetching &&
           adsQuery.data?.data &&
           adsQuery.data?.data.length > 0 && (
             <div className="flex-1">

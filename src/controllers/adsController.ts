@@ -10,8 +10,12 @@ import toast from "react-hot-toast";
 export async function getAdsByPaginate(filterPaginate: FilterPaginateRequest) {
   const query = createFilterPaginateQuery(filterPaginate);
   const filterSearch = createFilterQueryString(query, true);
+
+  const searchQuery = filterPaginate.filters.search
+    ? `&address_like=${filterPaginate.filters.search || ""}`
+    : "";
   const fetchUrl = AdsRouteApi.ALL.concat(
-    `${filterSearch}&_sort=id&_order=desc`
+    `${filterSearch}&_sort=id&_order=desc` + searchQuery
   );
 
   try {
