@@ -4,9 +4,9 @@ import Login from "../../pages/Auth/login";
 import NotFound from "../../pages/NotFound";
 import Register from "../../pages/Auth/register";
 import AllAds from "../../pages/Ads";
-import CreatAds from "../../pages/Ads/creat";
 import { ViewAds } from "../../pages/Ads/view";
 import EditAds from "../../pages/Ads/edit";
+import CreateAds from "../../pages/Ads/create";
 
 export const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/creatAds",
-        element: <CreatAds />,
+        element: <CreateAds />,
       },
       {
         path: "/view/:id",

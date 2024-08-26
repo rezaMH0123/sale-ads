@@ -12,13 +12,13 @@ export default function CreateAds() {
   });
 
   return (
-    <Container outherClassName="py-8 h-[700px]">
-      <div className="col-span-full md:col-span-5 md:px-6">
+    <Container outherClassName="py-8 h-[700px] overflow-y-scroll">
+      <div className="col-span-full md:col-span-5 md:px-6 ">
         <div className="shadow-card-3 dark:bg-white rounded-lg h-full">
           <CreatAdsForm position={position!} />
         </div>
       </div>
-      <div className="col-span-full md:col-span-7  rounded-lg overflow-hidden mt-8 md:mt-0 h-[300px] md:h-full">
+      <div className="col-span-full md:col-span-7  rounded-lg overflow-hidden mt-8 md:mt-0 h-[300px] md:h-full mb-5">
         <MapJayno position={position!} setPosition={setPosition} />
       </div>
     </Container>

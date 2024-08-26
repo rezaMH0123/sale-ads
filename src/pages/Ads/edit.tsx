@@ -41,8 +41,8 @@ export default function EditAds() {
           صبر کنید...
         </div>
       ) : (
-        <Container outherClassName="py-8 h-[700px]">
-          <div className="col-span-full md:col-span-5 px-6">
+        <Container outherClassName="py-8 h-[700px] overflow-y-scroll">
+          <div className="col-span-full md:col-span-5 md:px-6 ">
             <div className="shadow-card-3 dark:bg-white rounded-lg h-full">
               <EditAdsForm
                 position={position!}
@@ -55,11 +55,7 @@ export default function EditAds() {
               />
             </div>
           </div>
-          <div
-            className={`col-span-full md:col-span-7  rounded-lg overflow-hidden mt-8 md:mt-0 ${
-              !position && "bg-gray-50"
-            }`}
-          >
+          <div className="col-span-full md:col-span-7  rounded-lg overflow-hidden mt-8 md:mt-0 h-[300px] md:h-full mb-5">
             {!!(position?.lat && position?.lng) ? (
               <MapJayno position={position} setPosition={setPosition} />
             ) : (

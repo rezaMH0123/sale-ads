@@ -8,7 +8,7 @@ export default function Layout() {
   console.log(isDarkMode);
   return (
     <PrivateRoutes>
-      <div className="px-2 md:px-12 py-4 h-full w-screen dark:bg-black">
+      <div className="px-2 md:px-12 py-4 h-full w-screen dark:bg-black overflow-y-auto ">
         <ThemeToggleButton />
         <Outlet />
       </div>

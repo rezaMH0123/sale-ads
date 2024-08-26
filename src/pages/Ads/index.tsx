@@ -61,7 +61,7 @@ export default function AllAds() {
   }, [adsQuery.data]);
 
   return (
-    <Container outherClassName="border-transparent  p-3">
+    <Container outherClassName="border-transparent p-3">
       <main className="col-span-12 flex flex-col">
         <div className="flex text-center justify-between">
           <h1 className="text-2xl font-bold mb-4">فهرست اگهی ها</h1>
