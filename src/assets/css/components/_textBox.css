@@ -1,0 +1,7 @@
+.textbox {
+  @apply text-right border border-cyan-500 px-4 h-12 rounded-lg outline-none;
+
+  &-error {
+    @apply border border-red-500 text-red-500;
+  }
+}

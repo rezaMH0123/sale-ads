@@ -1,0 +1,7 @@
+.textarea {
+  @apply text-right border border-cyan-500 px-4 pt-2 min-h-[112px] rounded-lg outline-none focus:outline-none focus:border-cyan-500 resize-none;
+
+  &-error {
+    @apply border border-red-500 text-red-500;
+  }
+}

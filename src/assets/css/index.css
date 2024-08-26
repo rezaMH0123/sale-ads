@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./_components.css";
+
+@font-face {
+  font-family: "Shabnam";
+  font-weight: 400;
+  src: url("/fonts/Shabnam-FD.ttf");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-weight: 500;
+  src: url("/fonts//Shabnam-Medium-FD.ttf");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-weight: 700;
+  src: url("/fonts//Shabnam-Bold-FD.ttf");
+}
+html,
+body {
+  font-family: "Shabnam";
+  background-color: #f7f7f7;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}

@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "email": "reza@gmail.com",
+      "password": "$2a$10$R88pmL2EtWvkD5PQmEHeT./p7pxXjgntwKFUMT7mBhx9p7Hl1GfA2",
+      "id": 3
+    },
+    {
+      "email": "sjjad@gmail.com",
+      "password": "$2a$10$kGozGv/r.kLDaKXddba3vewQixjGBy.X9dA7Mjz4u1bTqyV7iN1MK",
+      "id": 4
+    }
+  ],
+  "advertisement": [
+    {
+      "phone": "09115949104",
+      "address": "میخوام برم به ایران",
+      "description": "سلام و درود بر شنوندگان ",
+      "lat": 35.68574469022577,
+      "lng": 51.408973566544034,
+      "id": 1
+    },
+    {
+      "phone": "0911594915",
+      "address": "میخوام برم به ایران",
+      "description": "سلام و درود بر شنوندگان ",
+      "lat": 35.68574469022577,
+      "id": 2
+    },
+    {
+      "phone": "09115949104",
+      "address": "عباس عی",
+      "description": "ییی\nي\nيییییی\nب",
+      "lat": 35.69076395093683,
+      "lng": 51.28807313980597,
+      "id": 3
+    },
+    {
+      "phone": "09875648345",
+      "address": "صیثصیثیضش",
+      "description": "سسسسساراارارارار",
+      "lat": 31.31610138349565,
+      "lng": 49.34912334389402,
+      "id": 7
+    }
+  ]
+}
